@@ -1,2 +1,40 @@
 /* CSS Document */
-
+body{
+	background-color: #02010a;
+	font-family: "Dancing Script";
+}
+#contenido{
+	width: 900px;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 auto;
+}
+#contenido header, #contenido main, #contenido footer{
+	width: 100%;
+}
+header{
+	background-color: #5b7989;
+	text-shadow: 2px #02010a;
+	padding: 10px 10px;
+	border-radius: 10px 10px 0 0;
+	color: white;
+	display: flex;
+	flex-flow: row wrap;
+}
+header nav{
+	margin-top: 30px;
+	font-size: 1.3em;
+	margin-left: 250px;
+}
+header a{
+	color: white;
+}
+header nav ul{
+	width: 100%;
+	margin: 0 auto;
+	list-style: none;
+}
+header nav li{
+	display: inline;
+	margin: 5px;
+}
