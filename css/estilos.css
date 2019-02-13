@@ -99,3 +99,29 @@ footer img{
 	box-shadow: 2px 2px 2px #82c3a6;
 	border: 2px;
 }
+.galeria{
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
+}
+.galeria div{
+	margin: 10px;
+	padding-left: 1px;
+	
+}
+.galeria img{
+	margin: 0 auto;
+	width: 97%;
+}
+.galeria div:first-child img{
+	-webkit-filter:blur(10px);
+	filter: blur(10px);
+}
+.galeria div:nth-child(even) img{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%)
+}
+.galeria div:nth-child(3) img{
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
