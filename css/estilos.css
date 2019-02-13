@@ -19,7 +19,7 @@ header{
 	border-radius: 10px 10px 0 0;
 	color: white;
 	display: flex;
-	flex-flow: row wrap;
+	flex-direction: row ;
 }
 header nav{
 	margin-top: 30px;
@@ -37,4 +37,65 @@ header nav ul{
 header nav li{
 	display: inline;
 	margin: 5px;
+}
+#img_principal{
+	background-color: #82c3a6;
+	text-align: center;
+	padding: 5% 2%;
+}
+#img_principal img{
+	width: 70%;
+	margin: 0 auto;
+}
+#img_secundarias{
+	background-color: #d5c75f;
+	border: 1px;
+	padding: 5% 5%;
+	display: flex;
+	flex-direction: row;
+}
+#img_secundarias div{
+	text-align: center;
+}
+#img_secundarias div img{
+	margin: 0 auto;
+	width: 100%;
+}
+#img_secundarias a{ 
+	color:black
+}
+footer{
+	background-color: #C6d5c5;
+	display: flex;
+	flex-direction: row;
+	padding: 5% 2%;
+	border-radius: 0 0 10px 10px;
+}
+footer div{
+	margin: 0 auto;
+}
+footer ul{
+	list-style: none;
+}
+footer img{
+	height: 15px;
+	width: 15px;
+}
+#paisajes{
+	transition-property: transform, box-shadow;
+	transition-duration: 1s, 1s;
+}
+#paisajes:hover{
+	transform: rotateZ(10deg);
+	box-shadow: 2px 2px 2px #82c3a6;
+	border: 2px;
+}
+#retratos{
+	transition-property: transform, box-shadow;
+	transition-duration: 1s, 1s;
+}
+#retratos:hover{
+	transform: translateX(20px) translateY(-5px);
+	box-shadow: 2px 2px 2px #82c3a6;
+	border: 2px;
 }
