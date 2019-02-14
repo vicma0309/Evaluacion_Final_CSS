@@ -20,6 +20,7 @@ header{
 	color: white;
 	display: flex;
 	flex-direction: row ;
+	animation: slidein 2s;
 }
 header nav{
 	margin-top: 30px;
@@ -52,7 +53,7 @@ header nav li{
 	border: 1px;
 	padding: 5% 5%;
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 }
 #img_secundarias div{
 	text-align: center;
@@ -64,22 +65,22 @@ header nav li{
 #img_secundarias a{ 
 	color:black
 }
-footer{
-	background-color: #C6d5c5;
-	display: flex;
-	flex-direction: row;
-	padding: 5% 2%;
-	border-radius: 0 0 10px 10px;
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5% 2%;
+    border-radius: 0 0 10px 10px;
+    background-color: #C6d5c5;
 }
-footer div{
-	margin: 0 auto;
+footer div {
+    margin: 0 auto;
 }
-footer ul{
-	list-style: none;
+footer ul {
+    list-style: none;
 }
-footer img{
-	height: 15px;
-	width: 15px;
+footer img {
+    height: 20px;
+    width: 20px;
 }
 #paisajes{
 	transition-property: transform, box-shadow;
@@ -124,4 +125,60 @@ footer img{
 .galeria div:nth-child(3) img{
 	-webkit-filter: sepia(90%);
 	filter: sepia(90%);
+}
+@-webkit-keyframes slidein {
+    0% {
+        margin-top: 150%;
+    }
+    60% {
+        margin-top: -5%;
+    }
+    100% {
+        margin-top: 0%;
+    }
+}
+@media all and (min-width: 900px) {
+    #contenido {
+        width: 900px;
+    }
+    header h1 {
+        width: 50%;
+    }
+    header nav {
+        width: 50%;
+    }
+    #img_secundarias div {
+        width: 50%;
+    }
+    .galeria div {
+        width: 31%;
+    }
+    footer div {
+        width: 25%;
+    }
+}
+@media (max-width: 900px) {
+    #contenido {
+        width: 100%;
+    }
+    header {
+        text-align: center;
+    }
+    header h1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header nav {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #img_secundarias div {
+        width: 100%;
+    }
+    .galeria div {
+        width: 100%;
+    }
+    footer div {
+        width: 90%;
+    }
 }
